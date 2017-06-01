@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create(name: 'guest', email: 'guest@blastapp.io', password: 'password', password_confirmation: 'password')
+Destination.create(name: 'home', longitude: -0.1276250, latitude: 51.5033640)
+Selection.create(user_id: 1, destination_id: 1)

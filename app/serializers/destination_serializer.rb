@@ -1,3 +1,3 @@
 class DestinationSerializer < ActiveModel::Serializer
-  attributes :id, :name, :latitude, :longitude, :user_ids
+  attributes :id, :name, :latitude, :longitude
 end
