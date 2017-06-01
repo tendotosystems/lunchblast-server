@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::API
   include Knock::Authenticable
 
-  before_action :authenticate_user
+  # disabled for now until default user is set
+  # before_action :authenticate_user
+
 end
