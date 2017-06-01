@@ -2,11 +2,7 @@ class Api::V1::DestinationController < ApplicationController
   before_action :set_destination
 
   def show
-  	render json: {
-  	  latitude: @destination.latitude,
-      longitude: @destination.longitude,
-      name: @destination.name
-  	}
+  	render json: @destination
   end
 
   private
