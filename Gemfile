@@ -13,6 +13,8 @@ gem 'puma', '~> 3.8.1'
 gem 'rack-cors'
 gem 'knock'
 gem 'annotate'
+gem 'active_model_serializers'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'byebug', platform: :mri

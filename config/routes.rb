@@ -1,10 +1,18 @@
 # == Route Map
 #
-#     Prefix Verb URI Pattern           Controller#Action
-# user_token POST /user_token(.:format) user_token#create
+#                 Prefix Verb URI Pattern                       Controller#Action
+#      api_v1_user_token POST /api/v1/user_token(.:format)      api/v1/user_token#create
+#     api_v1_destination GET  /api/v1/destination/:id(.:format) api/v1/destination#show
+# api_v1_selection_index POST /api/v1/selection(.:format)       api/v1/selection#create
 #
 
 Rails.application.routes.draw do
-  post 'user_token' => 'user_token#create'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+  	namespace :v1 do
+  	  post 'user_token' => 'user_token#create'
+  	  
+  	  resources :destination, only: [:show]
+  	  resources :selection, only: [:create]
+  	end
+  end
 end
