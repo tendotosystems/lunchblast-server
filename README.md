@@ -15,9 +15,11 @@ Things you may want to cover:
 * How to run the test suite
 
 Request
+
 	http://localhost:3000/api/v1/user_token
 
 Raw Payload
+
 	{"auth": {"email": "guest@blastapp.io", "password": "password"}}
 
 Returned JSON
@@ -36,12 +38,15 @@ Returned JSON
 	}
 
 Request
+
 	http://localhost:3000/api/v1/destination/1
 
 Raw Header
+
 	Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0OTY0OTkyMzcsImlkIjoxLCJlbWFpbCI6Imd1ZXN0QGJsYXN0YXBwLmlvIn0.U2-p4nuFqpopWQucYeOzfWCXVXlBMSzcw-JwtMwix1Y
 
 Returned JSON
+
 	{
 		"id": 1,
 		"name": "home",
