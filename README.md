@@ -25,16 +25,13 @@ Raw Payload
 Returned JSON
 
 	{
-		"jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0OTY0OTkyMzcsImlkIjoxLCJlbWFpbCI6Imd1ZXN0QGJsYXN0YXBwLmlvIn0.U2-p4nuFqpopWQucYeOzfWCXVXlBMSzcw-JwtMwix1Y",
-		"user": 
-		{
-			"id": 1,
-			"name": "guest",
-			"created_at": "2017-06-02T03:08:44.058Z",
-			"updated_at": "2017-06-02T03:08:44.058Z",
-			"email": "guest@blastapp.io",
-			"password_digest": "$2a$10$850irFlYLxOM4IdkmAykLOc9M5vC/OhMlxkW1gFG1b8UWGhWVdVrO"
-		}
+	  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0OTY0OTkyMzcsImlkIjoxLCJlbWFpbCI6Imd1ZXN0QGJsYXN0YXBwLmlvIn0.U2-p4nuFqpopWQucYeOzfWCXVXlBMSzcw-JwtMwix1Y",
+	  "user": 
+	  {
+		"id": 1,
+		"email": "guest@blastapp.io",
+		"name": "guest"
+	  }
 	}
 
 Request
@@ -48,10 +45,10 @@ Raw Header
 Returned JSON
 
 	{
-		"id": 1,
-		"name": "home",
-		"latitude": 51.503364,
-		"longitude": -0.127625
+	  "id": 1,
+	  "name": "home",
+	  "latitude": 51.503364,
+	  "longitude": -0.127625
 	}
 
 * Deployment instructions
