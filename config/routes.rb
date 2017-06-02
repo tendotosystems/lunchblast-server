@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   	namespace :v1 do
   	  post 'user_token' => 'user_token#create'
   	  
-  	  resources :destination, only: [:show]
+  	  get '/destination', to: 'destination#show'
   	  resources :selection, only: [:create]
   	end
   end

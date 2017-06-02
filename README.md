@@ -36,7 +36,7 @@ Returned JSON
 
 Request
 
-	http://localhost:3000/api/v1/destination/1
+	http://localhost:3000/api/v1/destination
 
 Raw Header
 

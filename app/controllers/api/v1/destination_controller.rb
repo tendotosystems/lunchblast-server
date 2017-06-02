@@ -1,5 +1,5 @@
 class Api::V1::DestinationController < ApplicationController
-  before_action :set_destination
+  before_action :set_random_destination
 
   def show
   	render json: @destination
@@ -7,7 +7,7 @@ class Api::V1::DestinationController < ApplicationController
 
   private
 
-  def set_destination
-  	@destination = Destination.find(params[:id])
+  def set_random_destination
+  	@destination = Destination.find(Random.new.rand(1...Destination.count))
   end
 end
