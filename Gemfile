@@ -15,6 +15,7 @@ gem 'knock'
 gem 'annotate'
 gem 'active_model_serializers'
 gem 'bcrypt', '~> 3.1.7'
+gem 'httparty'
 
 group :development, :test do
   gem 'byebug', platform: :mri

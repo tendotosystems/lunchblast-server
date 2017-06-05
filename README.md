@@ -48,7 +48,9 @@ Returned JSON
 	  "id": 1,
 	  "name": "home",
 	  "latitude": 51.503364,
-	  "longitude": -0.127625
+	  "longitude": -0.127625,
+	  "time_to": "3 mins",
+	  "distance_to": "0.2 mi"
 	}
 
 * Deployment instructions

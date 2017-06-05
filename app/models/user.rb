@@ -11,7 +11,6 @@
 class User < ApplicationRecord
   has_secure_password
 
-  has_many :origins
   has_many :selections
   has_many :destinations, through: :selections
 
