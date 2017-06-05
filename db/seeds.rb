@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(name: 'guest', email: 'guest@blastapp.io', password: 'password', password_confirmation: 'password')
+Origin.create(name: 'work', longitude: -84.364711, latitude: 33.759321)
 Destination.create(name: 'Krog Street Market', longitude: -84.364034, latitude: 33.756767)
 Selection.create(user_id: 1, destination_id: 1)
 
