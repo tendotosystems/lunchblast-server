@@ -8,7 +8,7 @@ class AuthTokenSerializer < ActiveModel::Serializer
   end
 
   def user
-  	User.find(object.payload[:id])
+  	User.find(object.payload[:sub])
   end
 
 end
