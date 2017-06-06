@@ -1,6 +1,11 @@
 class Api::V1::SelectionController < ApplicationController
   def create
-    Selection.create(selection_params)
+    @selection = Selection.new(selection_params)
+    if @selection.save
+      render json: { status: 201, selection: @selection }
+    else
+      render json: { status: 422, errors: @selection.errors }
+    end
   end
 
   private
