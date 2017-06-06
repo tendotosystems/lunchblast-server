@@ -4,7 +4,7 @@
 Ruby 2.3.3
 Rails 5.0.3
 
-##Database initialization
+## Database initialization
 	rake db:setup
 
 The seed file has 1 User, 1 Origin, 1 Selection, and 17 Destinations
