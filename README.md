@@ -11,7 +11,7 @@ The seed file has 1 User, 1 Origin, 1 Selection, and 17 Destinations
 
 ## Requests
 
----POST User Token---
+### POST User Token
 
 Request
 
@@ -33,7 +33,7 @@ Returned JSON
 	  }
 	}
 
----GET Destination---
+### GET Destination
 
 Request
 
@@ -54,7 +54,7 @@ Returned JSON
 	  "distance_to": "0.2 mi"
 	}
 
----GET Selection---
+### GET Selection
 
 Request
 
@@ -77,7 +77,7 @@ Returned JSON
 	  }
 	}
 
----POST User---
+### POST User
 
 Request
 
