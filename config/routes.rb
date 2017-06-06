@@ -4,6 +4,7 @@
 #      api_v1_user_token POST /api/v1/user_token(.:format)  api/v1/user_token#create
 #     api_v1_destination GET  /api/v1/destination(.:format) api/v1/destination#show
 # api_v1_selection_index POST /api/v1/selection(.:format)   api/v1/selection#create
+#      api_v1_user_index POST /api/v1/user(.:format)        api/v1/user#create
 #
 
 Rails.application.routes.draw do
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   	  
   	  get '/destination', to: 'destination#show'
   	  resources :selection, only: [:create]
+  	  resources :user, only: [:create]
   	end
   end
 end

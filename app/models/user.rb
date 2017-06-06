@@ -15,6 +15,9 @@ class User < ApplicationRecord
 
   has_many :selections
   has_many :destinations, through: :selections
+  
+  validates :password_digest, presence: true
+  validates :email, uniqueness: true, presence: true
 
   def to_token_payload
   	{

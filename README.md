@@ -14,6 +14,8 @@ Things you may want to cover:
 
 * How to run the test suite
 
+---POST User Token---
+
 Request
 
 	http://calm-sands-26146.herokuapp.com/api/v1/user_token
@@ -34,6 +36,8 @@ Returned JSON
 	  }
 	}
 
+---GET Destination---
+
 Request
 
 	http://calm-sands-26146.herokuapp.com/api/v1/destination
@@ -53,6 +57,8 @@ Returned JSON
 	  "distance_to": "0.2 mi"
 	}
 
+---GET Selection---
+
 Request
 
 	http://calm-sands-26146.herokuapp.com/api/v1/selection
@@ -71,5 +77,29 @@ Returned JSON
 		"destination_id": 2,
 		"created_at": "2017-06-06T15:06:58.909Z",
 		"updated_at": "2017-06-06T15:06:58.909Z"
+	  }
+	}
+
+---POST User---
+
+Request
+
+	http://calm-sands-26146.herokuapp.com/api/v1/user
+
+Raw Payload
+
+	{"name": "guest2", "email": "guest2@blast.io", "password": "password", "password_confirmation": "password"}
+
+Returned JSON
+
+	{
+	  "status": 201,
+	  "user": {
+	    "id": 6,
+		"name": "guest2",
+		"created_at": "2017-06-06T17:41:17.108Z",
+		"updated_at": "2017-06-06T17:41:17.108Z",
+		"email": "guest2@blast.io",
+		"password_digest": "$2a$10$vf8YofnI.S4Bmd/Ba8qXx.hqsaIinqmStGpDmj7MefWoJ3JShJ9vS"
 	  }
 	}
