@@ -1,18 +1,15 @@
-# README
+# Lunchblast Server
 
-Things you may want to cover:
+## Ruby version
+Ruby 2.3.3
+Rails 5.0.3
 
-* Ruby version
+##Database initialization
+	rake db:setup
 
-* System dependencies
+The seed file has 1 User, 1 Origin, 1 Selection, and 17 Destinations
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+## Requests
 
 ---POST User Token---
 
