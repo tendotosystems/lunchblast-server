@@ -67,7 +67,6 @@ Raw Payload
 Returned JSON
 
 	{
-	  "status": 201,
 	  "selection": {
 	    "id": 13,
 		"user_id": 1,
@@ -90,13 +89,8 @@ Raw Payload
 Returned JSON
 
 	{
-	  "status": 201,
-	  "user": {
-	    "id": 6,
-		"name": "guest2",
-		"created_at": "2017-06-06T17:41:17.108Z",
-		"updated_at": "2017-06-06T17:41:17.108Z",
-		"email": "guest2@blast.io",
-		"password_digest": "$2a$10$vf8YofnI.S4Bmd/Ba8qXx.hqsaIinqmStGpDmj7MefWoJ3JShJ9vS"
-	  }
+	  "id": 19,
+	  "email": "guest102@blast.io",
+	  "name": "guest2",
+	  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjE5fQ._aJXD1giIWKbStI6qjXvbERogz28lQqc2JISBnniC3s"
 	}
