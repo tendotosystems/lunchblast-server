@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(name: 'guest', email: 'guest@blastapp.io', password: 'password', password_confirmation: 'password')
-Origin.create(name: 'work', longitude: -84.364711, latitude: 33.759321)
-Destination.create(name: 'Krog Street Market', longitude: -84.364034, latitude: 33.756767)
+Origin.create(name: 'work', longitude: -84.364711, latitude: 33.759321, user_id: 1)
 Selection.create(user_id: 1, destination_id: 1)
 
+Destination.create(name: 'Krog Street Market', longitude: -84.364034, latitude: 33.756767)
 Destination.create(name: 'Parish', longitude: -84.360364, latitude: 33.761852)
 Destination.create(name: 'Highland Bakery', longitude: -84.365834, latitude: 33.761232)
 Destination.create(name: 'Pure Taqueria', longitude: -84.3582457, latitude: 33.7630023)

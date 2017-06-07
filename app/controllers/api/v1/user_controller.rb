@@ -1,10 +1,11 @@
 class Api::V1::UserController < ApplicationController
+
   def create
     @user = User.new(user_params)
     if @user.save
-      render json: { status: 201, user: @user }
+      render json: @user, status: :created
     else
-      render json: { status: 422, errors: @user.errors }
+      render json: { errors: @user.errors }, status: :unprocessable_entity
     end
   end
 
