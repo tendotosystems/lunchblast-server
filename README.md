@@ -89,8 +89,10 @@ Raw Payload
 Returned JSON
 
 	{
-	  "id": 19,
-	  "email": "guest102@blast.io",
-	  "name": "guest2",
-	  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjE5fQ._aJXD1giIWKbStI6qjXvbERogz28lQqc2JISBnniC3s"
+	  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIzfQ.1PgDbCzTOvkGQf-eyG9im-joPbDXGRbbNS0iZsO1gTg",
+	  "user": {
+		"id": 23,
+		"name": "guest2",
+		"email": "guest1010@blast.io"
+	  }
 	}
