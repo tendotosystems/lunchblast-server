@@ -8,7 +8,6 @@
 
 User.create(name: 'guest', email: 'guest@blastapp.io', password: 'password', password_confirmation: 'password')
 Origin.create(name: 'work', longitude: -84.364711, latitude: 33.759321, user_id: 1)
-Selection.create(user_id: 1, destination_id: 1)
 
 Destination.create(name: 'Krog Street Market', longitude: -84.364034, latitude: 33.756767)
 Destination.create(name: 'Parish', longitude: -84.360364, latitude: 33.761852)
@@ -27,3 +26,5 @@ Destination.create(name: 'Fritti', longitude: -84.357775, latitude: 33.762929)
 Destination.create(name: 'Zuma Sushi and Sake Bar', longitude: -84.365155, latitude: 33.761184)
 Destination.create(name: 'Ammazza', longitude: -84.368091, latitude: 33.754193)
 Destination.create(name: 'Thumbs Up Diner', longitude: -84.368538, latitude: 33.754192)
+
+Selection.create(user_id: 1, destination_id: 1)
