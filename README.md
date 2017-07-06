@@ -101,6 +101,7 @@ Returned JSON
 This is used for push notifications
 
 Request
+
 	http://calm-sands-26146.herokuapp.com/api/v1/tokens
 
 Raw Payload
