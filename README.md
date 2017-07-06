@@ -96,3 +96,19 @@ Returned JSON
 		"email": "guest1010@blast.io"
 	  }
 	}
+
+### Post Token
+This is used for push notifications
+
+Request
+	http://calm-sands-26146.herokuapp.com/api/v1/tokens
+
+Raw Payload
+	
+	{"user_id": "1", "push_token": "aaa"}
+
+Returned JSON
+		 
+    {
+	  "success": true
+	}
