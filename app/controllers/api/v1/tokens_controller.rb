@@ -1,21 +1,24 @@
 require 'exponent-server-sdk'
 
-class TokensController < ApplicationController
+class Api::V1::TokensController < ApplicationController
   def create
     # You probably actually want to associate this with a user,
     # otherwise it's not particularly useful
-    @token = User.where(token: params[:token][:value]).first
+    @user = User.find(params[:token][:user_id])
 
     message = ''
-    if @token.present?
+    if @user.push_token.present?
       message = 'Welcome back!'
     else
-      @token = Token.create(token_params)
+      puts "--------#{params[:token][:push_token]}--------"
+      @user.update_attribute(:push_token, params[:token][:push_token])
+      @token = @user.push_token
+      puts "-------- user push token #{@user.push_token}--------"
       message = 'Welcome to Expo'
     end
 
     exponent.publish(
-      exponentPushToken: @token.value,
+      exponentPushToken: @token,
       message: message,
       data: {a: 'b'}, # Data is required, pass any arbitrary data to include with the notification
     )
@@ -26,7 +29,7 @@ class TokensController < ApplicationController
   private
 
   def token_params
-    params.require(:token).permit(:value)
+    params.permit(:push_token, :user_id)
   end
 
   def exponent
