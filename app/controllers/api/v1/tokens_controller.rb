@@ -8,6 +8,7 @@ class Api::V1::TokensController < ApplicationController
 
     message = ''
     if @user.push_token.present?
+      @token = @user.push_token
       message = 'Welcome back!'
     else
       puts "--------#{params[:token][:push_token]}--------"
