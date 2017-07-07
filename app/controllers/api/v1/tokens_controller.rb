@@ -15,7 +15,7 @@ class Api::V1::TokensController < ApplicationController
       @token = @user.push_token
       message = 'Welcome to Expo'
     end
-    binding.pry
+
     exponent.publish(
       exponentPushToken: @token,
       message: message,
