@@ -11,17 +11,15 @@ class Api::V1::TokensController < ApplicationController
       @token = @user.push_token
       message = 'Welcome back!'
     else
-      puts "--------#{params[:token][:push_token]}--------"
       @user.update_attribute(:push_token, params[:token][:push_token])
       @token = @user.push_token
-      puts "-------- user push token #{@user.push_token}--------"
       message = 'Welcome to Expo'
     end
-
+    binding.pry
     exponent.publish(
       exponentPushToken: @token,
       message: message,
-      data: {a: 'b'}, # Data is required, pass any arbitrary data to include with the notification
+      data: {a: 'Welcome to Lunch Blast'}, # Data is required, pass any arbitrary data to include with the notification
     )
 
     render json: {success: true}
